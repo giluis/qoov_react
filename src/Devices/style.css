@@ -1,0 +1,27 @@
+.devices {
+    display: flex;
+    border: 1px solid black;
+    width: 700px;
+    overflow: hidden;
+    div {
+        border: 1px solid blue;
+        transition: transform 5s;
+        img {
+            max-width: 300px;
+            width: auto;
+            height: auto;
+            flex: 0 0 20%;
+            background: rgba(0,255,255,0.5);
+            object-fit: cover;
+        }
+        p {
+            color: red
+        }
+    }
+
+}
+
+.devices:hover div{
+    opacity: 0.5;
+    transform: translateX(-170%);
+}

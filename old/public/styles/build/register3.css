@@ -1,0 +1,480 @@
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Semibold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Semibold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Bold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Bold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Heavy";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Heavy.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Light";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Light.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SF Pro Display Regular";
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.sideindented {
+  margin: 0 125px;
+}
+
+.sectionheader {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.05em;
+  color: #DA2077;
+  margin-bottom: 15px;
+}
+
+.sectiontitle {
+  font-family: "Montserrat";
+  font-size: 2.1em;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.sectiontext {
+  color: #3B3B3B;
+  font-size: 1.25em;
+  font-family: "SF Pro Text Light";
+  max-width: 510px;
+  letter-spacing: -1px;
+  line-height: 1.69;
+}
+
+.bigbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DD2179;
+  font-family: "SF Pro Display Regular";
+  font-weight: 200;
+  border-radius: 58px;
+  font-size: 1.3em;
+  border: none;
+  color: white;
+  box-shadow: 0 6px 20px #c5c5c5;
+  font-style: normal;
+  text-decoration: none;
+}
+.bigbutton:hover {
+  transform: scaleY(0.8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease-in-out;
+}
+.bigbutton:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.highlight_brand {
+  color: #DA2077;
+  font-weight: 800;
+}
+
+footer {
+  height: 60px;
+  background-color: #f2f2f2;
+  padding: 30px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  font-size: 0.65em;
+  color: #707070;
+  align-self: end;
+  margin-right: 24px;
+}
+.form .formField {
+  padding-top: 19px;
+  padding-bottom: 9px;
+  padding-left: 11.5px;
+  height: 2px;
+  text-indent: 4px;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8em;
+  border: 1.5px solid;
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  border-color: rgba(226, 226, 226, 0.7764705882);
+}
+.form ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #bbb;
+}
+.form :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #bbb;
+  opacity: 1;
+}
+.form ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #bbb;
+  opacity: 1;
+}
+.form :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #bbb;
+}
+.form .formField:focus + .formLabel,
+.form .formField:not(:placeholder-shown) + .formLabel {
+  position: absolute;
+  font-family: inherit;
+  font-size: 0.6em;
+  padding-top: 5px;
+  top: -3px;
+  transition: font-size 0.2s ease-in, top 0.3s;
+  /* transition: 0.5s ease-out; */
+}
+.form .formField + .formLabel {
+  position: absolute;
+  font-family: inherit;
+  font-size: 0.8em;
+  left: 15px;
+  top: 7px;
+  /* transition: 0.5s ease-out; */
+  transition: font-size 0.2s ease-in, top 0.3s;
+  color: #555;
+}
+.form .form_question {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0 20px 0;
+}
+header .brand {
+  width: auto;
+  height: auto;
+  max-width: 120px;
+  max-height: 24px;
+}
+header .options {
+  display: flex;
+  justify-content: right;
+  width: 30%;
+  align-items: center;
+  font-size: 0.6em;
+  color: white;
+  height: 20px;
+}
+header .options .idioms {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  min-width: 35%;
+  background-color: #dd2179;
+  border-radius: 18px;
+  align-items: center;
+  margin-right: 10px;
+}
+header .options .idioms #portugalicon {
+  transform: scale(0.7, 0.7);
+}
+header .options .idioms img:nth-of-type(2) {
+  width: auto;
+  height: auto;
+  max-width: 40px;
+  max-height: 20px;
+  transform: scale(0.8, 0.8);
+}
+header .options .simplebutton {
+  height: 100%;
+  font-size: 0.9em;
+  padding: 0 3px;
+}
+header .options .simplebutton.signin {
+  padding: 0 20px;
+}
+
+.simplebutton {
+  background-color: #dd2179;
+  border-radius: 18px;
+  color: white;
+  border: none;
+}
+
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Semibold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Semibold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Bold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Bold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Heavy";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Heavy.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Light";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Light.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+.register_container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 200px;
+  align-self: flex-start;
+  width: 100%;
+}
+.register_container3 .details {
+  align-self: center;
+  padding-left: 80px;
+}
+.register_container3 .details .passosrestantes {
+  text-align: start;
+}
+.register_container3 .details .title {
+  text-align: start;
+}
+.register_container3 .details ul {
+  padding: 0;
+  list-style-type: none;
+}
+.register_container3 .details ul li {
+  font-family: "SF Pro Text Light";
+  font-size: 0.8em;
+  color: #323232;
+}
+.register_container3 .details ul li span.checkmark {
+  margin-right: 12px;
+}
+.register_container3 .details .bigbutton {
+  font-size: 1em;
+  max-width: 80px;
+  margin: 0;
+}
+.register_container3 .desconto {
+  position: relative;
+  display: flex;
+  font-family: "SF Pro Text Semibold";
+  flex-direction: column;
+  width: 244px;
+  height: 184px;
+  border-radius: 18px;
+  box-shadow: 0 0 6px #ccc;
+  background-color: white;
+  align-self: center;
+  z-index: 0;
+}
+.register_container3 .desconto .discount {
+  font-family: "SF Pro Text Semibold";
+  text-align: end;
+  font-size: 1.8em;
+  font-weight: 300;
+  font-family: "SF Pro Text Light";
+  color: #DA2077;
+  padding-right: 10px;
+  opacity: 0;
+  margin-bottom: 8px;
+}
+.register_container3 .desconto .plano {
+  font-family: "SF Pro Text Semibold";
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: #DA2077;
+}
+.register_container3 .desconto .diferencaPrecos {
+  font-size: 1.8em;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+.register_container3 .desconto .diferencaPrecos .previous_price {
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+.register_container3 .desconto .diferencaPrecos .precoBase {
+  font-size: 1.4em;
+  text-align: right;
+}
+.register_container3 .desconto .pormotorista {
+  font-size: 1.2em;
+  font-family: "SF Pro Text Light";
+  text-align: center;
+  color: #3B3B3B;
+}
+.register_container3 .desconto .mensalmente {
+  font-size: 0.72em;
+  font-family: "SF Pro Text Light";
+  color: #3B3B3B;
+  text-align: center;
+}
+.register_container3 .desconto .num_motoristas_container {
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -34px;
+  left: -34px;
+  box-shadow: 0 0 10px #ccc;
+  background-color: white;
+  opacity: 1;
+  z-index: 12;
+}
+.register_container3 .desconto .num_motoristas_container div:nth-of-type(1) {
+  color: #DA2077;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.6em;
+  height: 55px;
+}
+.register_container3 .desconto .num_motoristas_container div:nth-of-type(2) {
+  color: #DA2077;
+  font-family: "SF Pro Text Light";
+  font-weight: 300;
+  font-size: 0.6em;
+  margin-top: -25px;
+}
+.register_container3 .slider_container {
+  grid-area: 2/1/-1/-1;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Custom slider styles */
+  /* Slider thumb styles */
+}
+.register_container3 .slider_container .motoristas_slider {
+  height: 100px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.register_container3 .slider_container .motoristas_slider {
+  -webkit-appearance: none;
+  width: 360px;
+  height: 8px;
+  /* Thickness of the slider track */
+  background: rgba(221, 33, 121, 0.2);
+  /* Light pink color for the track */
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.register_container3 .slider_container .motoristas_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  /* Size of the slider ball */
+  height: 30px;
+  background: #DD2179;
+  /* Bright pink color for the ball */
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.register_container3 .slider_container .motoristas_slider::-moz-range-thumb {
+  width: 30px;
+  /* Size of the slider ball */
+  height: 30px;
+  background: #DD2179;
+  /* Bright pink color for the ball */
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid white;
+  /* Removes default border in Firefox */
+}
+.register_container3 .slider_container p {
+  font-size: 0.8em;
+  text-align: center;
+}
+.register_container3 .slider_container .labels {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  font-size: 0.7em;
+  width: 100%;
+}
+.register_container3 .slider_container .labels div strong {
+  font-size: 1em;
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=register3.css.map */

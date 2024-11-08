@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/build/register_common.css">
+    <link rel="stylesheet" href="./styles/build/register_initial.css">
+    <link rel="stylesheet" href="./styles/build/card_payment.css">
+    <link rel="stylesheet" href="./styles/build/common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Payment Details</title>
+</head>
+
+<body>
+    <main class="registermain sideindented">
+        <header>
+            <img src="./assets/Logo_Blck.svg" alt="Welcome to Qoov" class="brand">
+
+            <div class="options">
+                <div class="idioms simplebutton">
+                    <img id="portugalicon" src="assets/portugal_icon.png" alt="portuguese idiom">
+                    <div class="idiomname">
+                        Portugal (PT)
+                    </div>
+                    <img src="./assets/seta_para_baixo.png" alt="seta virada para baixo">
+                </div>
+                <button class="simplebutton signin">
+                    Iniciar Sessão
+                </button>
+            </div>
+
+        </header>
+        <section class="register_step">
+            <div class="register_container card_payment">
+                <img src="./assets/padlock.png" alt="padlock">
+                <div class="passosrestantes">
+                    PASSO <span class="highlight">5</span> de <span class="highlight">5</span>
+                </div>
+
+                <div class="title">
+                    Configure o seu cartão de crédito ou débito
+                </div>
+                <div class="possiblecards">
+                    <img src="assets/creditcards.png" alt="">
+                </div>
+
+                <form>
+                    <input type="text" placeholder="Número do cartão" name="cardnumber" id='cardnumber' required />
+                    <input type="date" placeholder="Data de validate" name="datavalidade" id='datavalidade' required />
+                    <input type="text" placeholder="CVV" name="cvv" id='cvv' required />
+                    <input type="text" placeholder="Nome próprio" name="nomeproprio" id='nomeproprio' required />
+                    <input type="text" placeholder="Apelido" name="apelido" id='apelido' required />
+                    <input type="submit" class="bigbutton" placeholder="Aderir">
+            </form>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

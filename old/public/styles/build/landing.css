@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Semibold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Semibold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Bold";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Bold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Heavy";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Heavy.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Display-Regular.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text Light";
+  src: url("../../assets/fonts/SFPro/SF-Pro-Text-Light.woff2") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+/* Main Page */
+main {
+  height: 100vh;
+}
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../assets/background_grid.png");
+  background-size: cover;
+}
+#landing .promotion {
+  font-family: "SF Pro Text Heavy";
+  font-size: 0.75em;
+  font-weight: 900;
+  color: #dd2179;
+  margin-bottom: 40px;
+  margin-top: 70px;
+  text-shadow: 0px 2px 20px #bbb;
+}
+#landing .title {
+  font-size: 3.3em;
+  max-width: 60%;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #303133;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 2px #bbb;
+}
+#landing .subtitle {
+  color: #777777;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.12em;
+  margin-bottom: 30px;
+  text-shadow: 0 6px 15px #aaa;
+  letter-spacing: -0.03em;
+}
+#landing .email_and_submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 40px;
+  height: 80px;
+}
+#landing .email_and_submit input {
+  background-color: rgba(221, 33, 121, 0.7254901961);
+  width: 33%;
+  max-width: 400px;
+  height: 32px;
+  border-radius: 18px;
+  padding-left: 15px;
+  font-size: 0.8em;
+  border: none;
+  color: #dddddd;
+  margin-right: 20px;
+  margin-bottom: 18px;
+}
+#landing .email_and_submit input::placeholder {
+  color: white;
+  opacity: 0.7;
+  font-size: 1em;
+}
+#landing .email_and_submit .bigbutton {
+  padding: 12px 25px;
+  font-size: 1.1em;
+  margin-bottom: 0;
+  width: 105px;
+}
+#landing .email_and_submit .bigbutton span {
+  margin-left: 10px;
+  text-shadow: 0 3px 18px #d6d6d6;
+}
+#landing .email_and_submit .bigbutton img {
+  transform: scale(0.7, 0.7);
+  margin-right: 7px;
+}
+
+/*# sourceMappingURL=landing.css.map */
